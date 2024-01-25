@@ -49,7 +49,7 @@
 
 
 /**
-native xml_create_document (document [], declaration_name [], declaration []);
+native xml_create_document (document [], declaration_name [] = "", declaration [] = "");
 native xml_document_exist (document []);
 native xml_delete_document (document []);
 
@@ -57,6 +57,7 @@ native xml_rename_document (document [], new_name []);
 native xml_copy_document (document [], copy []);
 
 native xml_create_node (document [], path [], node []); 
+native xml_node_exist (document [], path [], node [], bool: just_path = false);
 
 native xml_node_set_value_string (document [], path [], node [], value []);
 native xml_node_set_value_integer (document [], path [], node [], value);
@@ -129,8 +130,8 @@ native xml_node_get_value_boolean (document [], path [], node []);
  */
 stock xml_create_document (
     const document_name [],
-    const declaration_name [],
-    const declaration []
+    const declaration_name [] = "",
+    const declaration [] = ""
 ) {
     if (!fexist (document_name)) {
         new 
