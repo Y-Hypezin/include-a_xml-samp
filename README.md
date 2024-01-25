@@ -1,7 +1,7 @@
 # a_xml include for San Andreas Multiplayer (SA:MP)
 
 | file name | Latest release | Version | WIKI |
-| :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | a_xml | [check](https://github.com/zHypezinXzL/include-a_xml-samp/releases/tag/a_xml-v1.4.15.1-support-omp) | v1.4.15.1 | [wiki](https://github.com/zHypezinXzL/include-a_xml-samp/wiki) |
 
 -------------------------------------------------
